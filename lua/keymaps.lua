@@ -88,3 +88,5 @@ keymap("n", "<leader>tt", "<cmd>ToggleTerm<cr>", opts)
 keymap("t", "<leader>tt", "<C-\\><C-n><cmd>ToggleTerm<cr>", opts)
 keymap("n", "<leader>tn", "<cmd>ToggleTerm direction=horizontal<cr>", opts)
 keymap("n", "<leader>tv", "<cmd>ToggleTerm direction=vertical<cr>", opts)
+-- lazygit toggle
+keymap("n", "<leader>gt", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)

@@ -14,7 +14,7 @@ function M.config()
 
 	toggleterm.setup({
 		size = 20,
-		open_mapping = [[<c-\>]], -- <c-\> to open terminal in insert mode
+		open_mapping = [[<c-o>]], -- <c-\> to open terminal in insert mode
 		hide_numbers = true,
 		shade_terminals = true,
 		shading_factor = 2,
