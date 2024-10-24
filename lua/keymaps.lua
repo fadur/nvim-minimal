@@ -90,3 +90,11 @@ keymap("n", "<leader>tn", "<cmd>ToggleTerm direction=horizontal<cr>", opts)
 keymap("n", "<leader>tv", "<cmd>ToggleTerm direction=vertical<cr>", opts)
 -- lazygit toggle
 keymap("n", "<leader>gt", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)
+
+-- go to definition
+keymap("n", "<leader>gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
+keymap("n", "<leader>gt", "<cmd>lua vim.lsp.buf.type_definition()<CR>", opts)
+keymap("n", "<leader>gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
+
+-- alpha
+keymap("n", "<leader>aa", "<cmd>Alpha<CR>", opts)

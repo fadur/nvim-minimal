@@ -51,3 +51,13 @@ vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
     end
   end,
 })
+
+-- detect file if html and is go template
+vim.api.nvim_create_autocmd({ "BufRead" }, {
+  pattern = { "*.html" },
+  callback = function()
+    if vim.bo.filetype == "html" and vim.fn.search("{{", "nw") ~= 0 then
+      vim.bo.filetype = "gotmpl"
+    end
+  end,
+})
