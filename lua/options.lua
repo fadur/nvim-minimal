@@ -42,7 +42,9 @@ vim.opt.iskeyword:append("-") -- treats words with `-` as single words
 vim.opt.formatoptions:remove({ "c", "r", "o" }) -- This is a sequence of letters which describes how automatic formatting is to be done
 vim.opt.linebreak = true
 vim.g.copilot_filetypes = { yaml = true, yml = true }
---vim.rocks.hererocks = false
+-- vim.rocks.hererocks = true
+vim.g.loaded_perl_provider = 0
+vim.g.loaded_ruby_provider = 0
 
 vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
 	pattern = "*.gohtml,*.gotmpl,*.html",
